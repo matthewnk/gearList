@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>GL | HOME</title>
+    <title>GL | BACKPACKING</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,12 +46,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">HOME <span class="sr-only">(current)</span></a></li>
+            <li><a href="index.html">HOME <span class="sr-only">(current)</span></a></li>
             <li><a href="#">MY LISTS</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CHOOSE AN ACTIVITY<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="backpacking.html">Backpacking</a></li>
+                <li class="active"><a href="#">Backpacking</a></li>
                 <li><a href="#">Day Hiking</a></li>
                 <li><a href="#">Backcountry Skiing</a></li>
                 <!-- <li role="separator" class="divider"></li>
@@ -68,23 +68,24 @@
 <!-- BOOTSTRAP JUMBOTRON -->
       <div id="top"></div>
       <div class="jumbotron">
-        <h1>GEAR LISTS</h1>
+        <h1>BACKPACKING</h1>
       </div>
 
 <!-- LIST OF LISTS -->
-
-      <div class="listMenu">        
+    <div class="gearList">        
         <ul>
-          <li><a href="backpacking.html">Backpacking</a></li>
-          <li><a href="">Day Hiking</a></li>
-          <li><a href="">Backcountry Country Skiing</a></li>
+          <li><input type="checkbox"/><label>Backpack</label></li>
+          <li><input type="checkbox"/><label>Tent</label></li>
+          <li><input type="checkbox"/><label>Sleeping Bag</label></li>
+          <li><input type="checkbox"/><label>Hiking Boots</label></li>
         </ul>
-      </div>
-
+    </div>
 
 <!-- USER INPUT ADDED HERE -->
-      <div class="wordList">
-        <dl id="wordList"></dl>
+      <div class="userGearList">
+        <ul>
+          <dl id="userGearList"></dl>
+        </ul>
       </div>
 
 <!-- FORM FOR ADDING AN ITEM -->
@@ -93,7 +94,7 @@
         <form id="theForm" action="#">
           <br><br>
           <legend for="word">Add Item</legend>
-          <input type="text" id="word" onClick="this.form.reset()"/><br>
+          <input type="text" id="item" onClick="this.form.reset()"/><br>
           <br>
           <button id="addButton" >Add Item to List</button>
           <button id="clearButton">Clear List</button><br><br>
@@ -111,7 +112,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/gearList.js"></script>
     
 
   </body>
