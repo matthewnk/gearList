@@ -7,6 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>GL | BACKPACKING</title>
 
+    <!-- fonts -->
+    <script src="//use.edgefonts.net/abel:n4:all.js"></script>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -71,34 +74,24 @@
         <h1>BACKPACKING</h1>
       </div>
 
-<!-- LIST OF LISTS -->
-    <div class="gearList">        
+<!-- LIST OF ITEMS -->
+    <div class="gearList">
         <ul>
-          <li><input type="checkbox"/><label>Backpack</label></li>
-          <li><input type="checkbox"/><label>Tent</label></li>
-          <li><input type="checkbox"/><label>Sleeping Bag</label></li>
-          <li><input type="checkbox"/><label>Hiking Boots</label></li>
+          <li id="one"><input type="checkbox"/>Backpack</li>
+            <li id="two"><input type="checkbox"/>Tent</li>
+            <li id="three"><input type="checkbox"/>Sleeping Bag</li>
+            <li id="three"><input type="checkbox"/>Sleeping Pad</li>
+            <li id="four"><input type="checkbox"/>Hiking Boots</li>
         </ul>
+      </div>
+
+<!-- FORM FOR ADDING ITEMS -->
+    <div id="newItemButton"><button href="#" id="showForm">Add Gear</button></div>
+      <form id="newItemForm">
+        <input type="text" id="itemDescription" placeholder="Add description" />
+        <input type="submit" id="add" value="add" />
+      </form>
     </div>
-
-<!-- USER INPUT ADDED HERE -->
-      <div class="userGearList">
-        <ul>
-          <dl id="userGearList"></dl>
-        </ul>
-      </div>
-
-<!-- FORM FOR ADDING AN ITEM -->
-
-      <div class"itemEntry">
-        <form id="theForm" action="#">
-          <legend for="word">Add Item</legend>
-          <input type="text" id="item" onClick="this.form.reset()"/><br>
-          <br>
-          <button id="addButton" >Add Item to List</button>
-          <button id="clearButton">Clear List</button><br><br>
-        </form>
-      </div>
 
 <!-- BOOTSTRAP STICKY FOOTER -->
     <footer class="footer" class="gl-footer">
@@ -111,7 +104,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/gearList.js"></script>
+    <script src="js/gearList1.js"></script>
     
 
   </body>

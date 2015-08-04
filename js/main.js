@@ -2,8 +2,6 @@ $(document).ready( function(){
         displayDictionary();
         $("#addButton").click(addWord);
         $("#addButton").click(clearEntry);
-        
-
         $("#clearButton").click(function(){
           localStorage.removeItem('theDictionary');
           $('#wordList').html(" ");
