@@ -1,5 +1,6 @@
 body {
-	font-family:'Orator W01 Mono', Courier;
+	font-family: Courier, sans-serif;
+	/*font-family:'Orator W01 Mono', Courier, sans-serif;*/
 }
 
 .navbar-default {
@@ -18,7 +19,6 @@ body {
 	height: 80px;
 	line-height: 80px;
 	padding: 0 25px;
-	font-family:'Orator W01 Mono', Courier;
 	font-size: 1em;
 
 }

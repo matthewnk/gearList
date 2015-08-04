@@ -10,7 +10,7 @@
 .listMenu li {
   list-style: none;
   border-bottom-style: dashed;
-  border-width: 2px;
+  border-width: 1px;
   clear: left;
   font-size: 20px;
   padding: 5px 0 5px 10px;
@@ -19,7 +19,7 @@
 .wordList .addMenu {
   list-style: none;
   border-bottom-style: dashed;
-  border-width: 2px;
+  border-width: 1px;
   clear: left;
   font-size: 20px;
   padding: 5px 0 5px 10px;
@@ -71,7 +71,7 @@
 .userGearList li{
   list-style: none;
   border-bottom-style: dashed;
-  border-width: 2px;
+  border-width: 1px;
   clear: left;
   font-size: 20px;
   padding: 5px 0;
@@ -91,7 +91,7 @@
   margin-right: auto;
   list-style: none;
   border-bottom-style: dashed;
-  border-width: 2px;
+  border-width: 1px;
   font-size: 20px;
   padding: 0px;
   padding-top: 5px;
@@ -120,7 +120,8 @@ form {
 form legend {
   color: #000;
   font-size: 2em;
-  padding-left: 10px;
+  
+  border-bottom: 1px solid #000;
 }
 
 label {
