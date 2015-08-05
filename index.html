@@ -10,6 +10,9 @@
 
     <!-- fonts -->
 
+    <!-- CSS RESET -->
+    <link href="css/html5reset-1.6.1.css" rel="stylesheet">
+
     <!-- Bootstrap -->
     <link href="css/html5reset-1.6.1.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -77,30 +80,36 @@
 
 <!-- LIST OF LISTS -->
 
-      <div class="listMenu">        
+      <!-- <div class="listMenu">        
         <ul>
           <li><a href="backpacking.html">Backpacking</a></li>
           <li><a href="">Day Hiking</a></li>
           <li><a href="">Backcountry Country Skiing</a></li>
         </ul>
+      </div> -->
+
+      <!-- LIST OF ITEMS -->
+    <div class="gearList">
+        <ul>
+          <li id="one"><a href="backpacking.html">Backpacking</a></li>
+          <li id="two"><a href="">Day Hiking</a></li>
+          <li id="three"><a href="">Backcountry Country Skiing</a></li>
+        </ul>
       </div>
 
 
-<!-- USER INPUT ADDED HERE -->
-      <div class="wordList">
-        <dl id="wordList"></dl>
-      </div>
+<!-- FORM FOR ADDING ITEMS -->
+    <div id="newItemButton"><button href="#" id="showForm">Add An Activity</button></div>
+      <form id="newItemForm">
+        <input type="text" id="itemDescription" placeholder="Add description" />
+        <input type="submit" id="add" value="add" />
+      </form>
+    </div>
 
-<!-- FORM FOR ADDING AN ITEM -->
-
-      <div class"itemEntry">
-        <form id="theForm" action="#">
-          <legend for="word">Add Item</legend>
-          <input type="text" id="word" onClick="this.form.reset()"/><br>
-          <br>
-          <button id="addButton" >Add Item</button>
-          <button id="clearButton">Clear List</button><br><br>
-        </form>
+<!-- BOOTSTRAP STICKY FOOTER -->
+    <footer class="footer" class="gl-footer">
+      <div class="container">
+        <p class="text-muted">&copy 2015 MNK_designs  | <a href="#top">Back to top</a></p>
       </div>
 
 <!-- BOOTSTRAP STICKY FOOTER -->
@@ -115,6 +124,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/gearList1.js"></script>
+
     
 
   </body>

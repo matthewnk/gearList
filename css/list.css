@@ -111,11 +111,11 @@ form {
   margin-left: auto;
   margin-right: auto;
   max-width: 680px;
-  padding: 20px 0 0 0px;
+  padding: 20px 0 0 35px;
 }
 
 #newItemButton {
-  padding: 20px 0 0 60px;
+  padding: 20px 0 0 35px;
 }
 
 form legend {
