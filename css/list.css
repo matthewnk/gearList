@@ -33,6 +33,8 @@
   float: left;
   width: 25px;
   height: 25px;
+  margin: 0;
+  padding-right: 5px;
 }
 
 form {
@@ -60,4 +62,9 @@ label {
 ul {
   padding: 0px;
   margin: 0;
+}
+
+.complete {
+  background-color: #999;
+  color: #fff;
 }
