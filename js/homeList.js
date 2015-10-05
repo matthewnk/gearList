@@ -6,8 +6,7 @@ $(function() {
   $list = $('.gearList ul');                     // Cache the unordered list
   $newItemForm = $('#newItemForm');              // Cache form to add new items
   $newItemButton = $('#newItemButton');          // Cache button to show form
-
-
+  
 
   // SETUP FORM FOR NEW ITEMS
   $newItemButton.show();                         // Show the button
@@ -24,18 +23,17 @@ $(function() {
     var pageUrl = window.location.hostname   //get current page url
     var url = pageUrl + text + '.html';       //url
     // url += $('#userList').val();
-    $list.append('<li class=user-' + text + 'List>' + text.link(url) + '</li>'); // Add item to end of the list
-    // window.location = url;
+    $list.append('<li class="userList" id="user-' + text + 'List">' + text.link(url) + '</li>'); // Add item to end of the list
     $('input:text').val('');                    // Empty the text input
+    $('.userList').on('click', function(){
+      var newPage = "<h1>Test</h1>"
+      var w = window.open("", "mywindow1");
+      $(w.document.body).html(newPage);
+    });
   });
-
-
-  // CLICK HANDLING - USES DELEGATION ON <ul> ELEMENT
-  $list.on('click', 'li', function() {
-
-    // $("#userList").click(function() {
-        window.location = "file:///Users/MNK/Documents/PCS/gearList/" + $("#text").val();
-    // });
-
-  });                          
+ 
 });
+
+                         
+
+
