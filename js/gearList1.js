@@ -28,28 +28,6 @@ $(function() {
     var text = $('input:text').val();           // Get value of text input
     $list.append('<li>' + "<input type='checkbox' id='checkbox-1-'/>" + "<label for='checkbox-1-'>" + text + "</label>" + '</li>');      // Add item to end of the list
     $('input:text').val('');                    // Empty the text input
-  });
-
-  // CLICK HANDLING - USES DELEGATION ON <ul> ELEMENT
-//   $list.on('click', 'li', function() {
-//     var $this = $(this);               
-//     var complete = $this.hasClass('complete'); 
-
-//     if (complete === true) {           
-//       $this.animate({                  
-//         opacity: 0.0,
-//         paddingLeft: '+=180'
-//       }, 500, 'swing', function() {    
-//         $this.remove();                
-//       });
-//     } else {                           
-//       item = $this.text();             
-//       $this.remove();                  
-//       $list                            
-//         .append('<li class=\"complete\">' + item + '</li>')
-//         .hide().fadeIn(300);           
-//       updateCount();                   
-//     }                                  
-//   });                                  
+  });                                 
 
 });
